@@ -45,7 +45,7 @@ jobs:
 
       - name: Build
         working-directory: ${{ inputs.project_loc }}
-        run: BASE_PATH="/${{ github.event.repository.name }}/" bun run build
+        run: BASE_PATH="/${{ github.event.repository.name }}" bun run build
 
       - name: Setup Pages
         uses: actions/configure-pages@v5
